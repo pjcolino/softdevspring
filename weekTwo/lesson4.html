@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Week Three Subject Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Link to a downloaded twitter bootstrap cascading style sheet full of many features-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- This is an internal style block of code to override some of the bootstrap style values-->
+    <style type="text/css">
+        .navbar .nav > li > a {
+            color: #84B1DB; /*nav color*/
+            text-shadow: 10px;
+            border-radius: 5px;
+            font-size: 140%;
+            font-family: Times New Roman;
+
+
+
+        }
+        .navbar .nav > li > a:hover {
+            color:white;
+            background: #1CEADE;
+        }
+        .myclass {
+            color: #9B8E0B;
+            background-color:  #E9E3A5;
+        }
+
+        
+        body {
+
+            background-image: url(ATL.jpg);
+          
+
+          }
+
+
+            .row1Styles {
+                background-color: #CE8686; 
+                min-height: 200px;
+            }
+            .row2Styles {
+                background-color: #9DCE86; 
+                min-height: 200px;
+            }
+            .col1Styles {
+                background-color: #9E6EF3; 
+                height: 300px;
+                border-width: 2px; border-color: black; border-style: solid;
+            }
+            .col2Styles {
+                background-color: #F36EAC; 
+                height:300px;
+                border-width: 2px; border-color: black; border-style: solid;
+                margin-left: 80px;
+            }
+        </style>
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+<!--  The container class from bootstrap is a width of 1000 pixels. 
+  It has all the padding other values to help make the content look its best in many different browsers.-->
+  <div class="container">
+    <!--  navbar class has many types, this is the first one you can use. we will explore other in class or video lesson-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="http://seattleacademy.org/">Seattle Academy</a>
+            <ul class="nav navbar-nav">
+                <li><a href="../index.html">Main page</a></li>
+                <li><a href="../weekOne/lesson1.html">First page</a></li>
+                <li><a href="../weekOne/lesson2.html">Second page</a></li>
+                <li><a href="lesson3.html">Third page</a></li>
+                <li class="active"><a href="lesson4.html">Fourth page</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--     An example of the many classes (another identification element) that are inside the bootstrap library-->
+    <div class="alert alert-success">
+        This site is under development!
+    </div>
+    <h1>We are making progress in this class!!</h1>
+    <!--  You can do columns by nting spans inside of rows. -->
+    <div class="row">
+        <div class="col-sm-6">
+            <p>I am going to need some help with my homeowork today </p>
+        </div>
+
+    </div> <!-- closing row -->
+
+    <div class="row row1Styles">
+        <div class="col-sm-6 col1Styles">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="matt ryan.webp" alt="Matt Ryan">
+                </div>
+
+                <div class="item">
+                  <img src="1.img" alt="Thomas Muller">
+              </div>
+
+              <div class="item">
+                  <img src="3.webp" alt="New York">
+              </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>  <!-- closing column -->
+<div class="col-sm-5 col2Styles">
+
+    <h2>Music in Atlanta</h2>
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">21 Savage - Atlanta Rapper</h4>
+          </div>
+          <div class="modal-body">
+            <img src="21S.gif" >
+          <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+      
+  </div>
+</div>  <!-- closing modal -->
+
+</div> <!-- closing column -->
+</div>  <!-- closing row -->
+
+<div class="row row2Styles">
+    <div class="col-sm-6 col1Styles">
+        <!-- Modal -->
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="70"
+  aria-valuemin="0" aria-valuemax="100" style="width:70%">
+  70%
+</div>
+
+<a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+</div>
+
+    </div>  <!-- closing column -->
+    <div class="col-sm-5 col2Styles">
+        <p><ul class="nav nav-pills nav-stacked">
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="#">Menu 1</a></li>
+  <li><a href="#">Menu 2</a></li>
+  <li><a href="#">Menu 3</a></li>
+</ul></p>
+    </div>  <!-- closing column -->
+</div>  <!-- closing row -->
+
+<div class ="row">
+
+<iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DWXi7h4mmmkzD" width="500" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+
+
+</div> <!-- closing container -->
+
+
+
+</body>
+</html>
